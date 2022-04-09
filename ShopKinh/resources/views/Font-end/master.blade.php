@@ -17,7 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="web/js/jquery1.min.js"></script>
 <!-- start menu -->
 <link href="web/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/megamenu.js"></script>
+<script type="text/javascript" src="web/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!--start slider -->
     <link rel="stylesheet" href="web/css/fwslider.css" media="all">

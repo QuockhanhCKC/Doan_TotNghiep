@@ -9,4 +9,9 @@ class HomeController extends Controller
     public function index(){
     	return view('Font-end.page.home.home');
     }
+    
+    public function about(){
+    	return view('Font-end.page.About');
+    }
+
 }

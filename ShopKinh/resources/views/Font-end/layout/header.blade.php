@@ -4,11 +4,11 @@
 			 
 			 <div class="cssmenu">
 				<ul>
-					<li class="active"><a href="login.html">Account</a></li> |
-					<li><a href="checkout.html">Wishlist</a></li> |
-					<li><a href="checkout.html">Checkout</a></li> |
-					<li><a href="login.html">Log In</a></li> |
-					<li><a href="register.html">Sign Up</a></li>
+				
+
+					<li><a href="Cart">Checkout</a></li> |
+					<li><a href="loginregister">Log In</a></li> |
+					<li><a href="loginregister">Sign Up</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -18,52 +18,13 @@
 	    <div class="wrap">
 			<div class="header-bottom-left">
 				<div class="logo">
-					<a href="index.html"><img src="web/images/logo.png" alt=""/></a>
+					<a href="{{route('Home')}}"><img src="web/images/logo.png" alt=""/></a>
 				</div>
 				<div class="menu">
 	            <ul class="megamenu skyblue">
-			<li class="active grid"><a href="index.html">Home</a></li>
-			<li><a class="color4" href="#">women</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Contact Lenses</h4>
-								<ul>
-									<li><a href="womens.html">Daily-wear soft lenses</a></li>
-									<li><a href="womens.html">Extended-wear</a></li>
-									<li><a href="womens.html">Lorem ipsum </a></li>
-									<li><a href="womens.html">Planned replacement</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Sun Glasses</h4>
-								<ul>
-									<li><a href="womens.html">Heart-Shaped</a></li>
-									<li><a href="womens.html">Square-Shaped</a></li>
-									<li><a href="womens.html">Round-Shaped</a></li>
-									<li><a href="womens.html">Oval-Shaped</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Eye Glasses</h4>
-								<ul>
-									<li><a href="womens.html">Anti Reflective</a></li>
-									<li><a href="womens.html">Aspheric</a></li>
-									<li><a href="womens.html">Bifocal</a></li>
-									<li><a href="womens.html">Hi-index</a></li>
-									<li><a href="womens.html">Progressive</a></li>
-								</ul>	
-							</div>												
-						</div>
-					  </div>
-					</div>
-				</li>				
-				<li><a class="color5" href="#">Men</a>
+			<li class="active grid"><a href="{{route('Home')}}">Home</a></li>
+						
+				<li><a class="color5" href="{{route('Products')}}">Product</a>
 				<div class="megapanel">
 					<div class="col1">
 							<div class="h_nav">
@@ -101,8 +62,9 @@
 						</div>
 					</div>
 				</li>
-				<li><a class="color6" href="other.html">Other</a></li>
-				<li><a class="color7" href="other.html">Purchase</a></li>
+				<li><a class="color4" href="{{route('About')}}">About</a></li>
+				<li><a class="color6" href="{{route('Products')}}">Sale</a></li>
+				<li><a class="color7" href="Contact">Contact</a></li>
 			</ul>
 			</div>
 		</div>
@@ -114,22 +76,22 @@
 		 </div>
 	  <div class="tag-list">
 	    <ul class="icon1 sub-icon1 profile_img">
-			<li><a class="active-icon c1" href="#"> </a>
+			<li><a class="active-icon c1" href="Sale"> </a>
 				<ul class="sub-icon1 list">
-					<li><h3>sed diam nonummy</h3><a href=""></a></li>
-					<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+					<li><h3>Sale</h3><a href=""></a></li>
+				
 				</ul>
 			</li>
 		</ul>
 		<ul class="icon1 sub-icon1 profile_img">
-			<li><a class="active-icon c2" href="#"> </a>
+			<li><a class="active-icon c2" href="Cart"> </a>
 				<ul class="sub-icon1 list">
 					<li><h3>No Products</h3><a href=""></a></li>
 					<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
 				</ul>
 			</li>
 		</ul>
-	    <ul class="last"><li><a href="#">Cart(0)</a></li></ul>
+	    <ul class="last"><li><a href="Cart">Cart(0)</a></li></ul>
 	  </div>
     </div>
      <div class="clear"></div>

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\DetailController;
 use App\Http\Controllers\Client\ProductController;
+use App\Http\Controllers\Client\loginregisterController;
+use App\Http\Controllers\Client\CartController;
+use App\Http\Controllers\Client\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +20,11 @@ use App\Http\Controllers\Client\ProductController;
 
 
 Route::group(['namespace'=>'Client'],function(){
-    Route::get('/index', [HomeController::class,'index']);
-    Route::get('/detail', [DetailController::class,'index']);
-    Route::get('/products', [ProductController::class,'index']);
+    Route::get('/', [HomeController::class,'index'])->name('Home');
+    Route::get('/about', [HomeController::class,'about'])->name('About');
+    Route::get('/detail', [DetailController::class,'index'])->name('Detail');
+    Route::get('/products', [ProductController::class,'index'])->name('Products');
+    Route::get('/loginregister', [loginregisterController::class,'index'])->name('loginregister');
+    Route::get('/Cart', [CartController::class,'index'])->name('Cart');
+    Route::get('/Contact', [ContactController::class,'index'])->name('Contact');
 });

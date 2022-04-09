@@ -7,7 +7,7 @@
 		  	<h2 class="head">Featured Products</h2>
 			<div class="top-box">
 			 <div class="col_1_of_3 span_1_of_3"> 
-			   <a href="single.html">
+			   <a href="{{route('Detail')}}">
 				<div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic.jpg" alt=""/>
@@ -27,7 +27,7 @@
                  </a>
 				</div>
 			   <div class="col_1_of_3 span_1_of_3">
-			   	 <a href="single.html">
+			   	 <a href="{{route('Detail')}}">
 					<div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic1.jpg" alt=""/>
@@ -46,7 +46,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-				 <a href="single.html">
+				 <a href="{{route('Detail')}}">
 				  <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic2.jpg" alt=""/>
@@ -70,7 +70,7 @@
 			</div>	
 			<div class="top-box">
 			  <div class="col_1_of_3 span_1_of_3">
-			  	 <a href="single.html">
+			  	 <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic3.jpg" alt=""/>
@@ -89,7 +89,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<a href="single.html">
+					<a href="{{route('Detail')}}">
 					<div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic4.jpg" alt=""/>
@@ -109,7 +109,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-				 <a href="single.html">
+				 <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic5.jpg" alt=""/>
@@ -131,7 +131,7 @@
 			</div>	
 			<div class="top-box1">
 			  <div class="col_1_of_3 span_1_of_3">
-			  	 <a href="single.html">
+			  	 <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic6.jpg" alt=""/>
@@ -151,7 +151,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-				 <a href="single.html">
+				 <a href="{{route('Detail')}}">
 					<div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic7.jpg" alt=""/>
@@ -172,7 +172,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-				  <a href="single.html">
+				  <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic8.jpg" alt=""/>
@@ -196,7 +196,7 @@
 		  <h2 class="head">Staff Pick</h2>
 		  <div class="top-box1">
 			  <div class="col_1_of_3 span_1_of_3">
-			  	 <a href="single.html">
+			  	 <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic8.jpg" alt=""/>
@@ -216,7 +216,7 @@
                    </a>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					 <a href="single.html">
+					 <a href="{{route('Detail')}}">
 					<div class="inner_content clearfix">
 					<div class="product_image">
 						<img src="web/images/pic4.jpg" alt=""/>
