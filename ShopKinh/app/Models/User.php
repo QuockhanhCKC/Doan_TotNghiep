@@ -10,23 +10,35 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var array
      */
+    protected $table = 'khach_hang';
     protected $fillable = [
-        'name',
         'email',
         'password',
+        'vai_tro_id',
+        'google_id',
+        'provider',
+        'provider_id',
+        'ten',
+        'sdt',
+        'dia_chi',
+        'gioi_tinh',
+        'hinh_dai_dien',
+        'bi_khoa' 
     ];
 
+    
+
     /**
-     * The attributes that should be hidden for serialization.
+     * The attributes that should be hidden for arrays.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $hidden = [
         'password',
@@ -34,11 +46,15 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be cast.
+     * The attributes that should be cast to native types.
      *
-     * @var array<string, string>
+     * @var array
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function biKhoaSortable($query, $direction) {
+        return $query->orderByRaw("if (bi_khoa = 1, 'Bị khóa', 'Không khóa') {$direction}");
+    }
 }

@@ -22,6 +22,7 @@ return new class extends Migration
             $table->double('thanh_tien');
             $table->timestamps();
             $table->softDeletes();
+        });
     }
 
     /**
