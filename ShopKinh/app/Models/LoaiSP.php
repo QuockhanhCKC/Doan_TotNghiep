@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class LoaiSP extends Model
 {
-    use HasFactory;
+    use SoftDeletes, Sortable;
+
+    protected $table = 'loai_sp';
+    protected $fillable = ['ten'];
+
+    public function chitietsanpham() {
+        return $this->hasMany('App\ChiTietSanPham','loai_sp_id','id	');
+    }
 }

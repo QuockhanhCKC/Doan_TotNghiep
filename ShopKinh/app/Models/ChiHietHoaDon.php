@@ -7,5 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class ChiTietHoaDon extends Model
 {
-    use HasFactory;
+    use Sortable;
+    protected $table = "chi_tiet_hoa_don";
+
+    public function sanpham() {
+        return $this->belongsTo(SanPham::class,'san_pham_id','id');
+    }
+    
+    public function hoadon() {
+        return $this->belongsTo(HoaDon::class,'hoa_don_id','id');
+    }
+
 }
