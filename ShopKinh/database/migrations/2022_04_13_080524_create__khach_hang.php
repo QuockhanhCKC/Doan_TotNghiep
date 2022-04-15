@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        Schema::create('khach_hang', function (Blueprint $table) {
         $table->id();
             $table->string('email', 30)->unique()->nullable();
             $table->string('password')->nullable();
@@ -25,6 +26,7 @@ return new class extends Migration
             $table->boolean('bi_khoa')->nullable()->default(false); // just admin, customer not have
             $table->timestamps();
             $table->softDeletes();
+        });
     }
 
     /**

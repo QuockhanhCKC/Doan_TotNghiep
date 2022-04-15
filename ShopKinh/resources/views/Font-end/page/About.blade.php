@@ -4,7 +4,6 @@
 
 <div class="login">
           <div class="wrap">
-				<ul class="breadcrumb breadcrumb__t"><a class="home" href="#">Home</a>  / About</ul>
 				<div class="section group">
 				   <div class="labout span_1_of_about">
 					 <h3>Testimonials</h3>
