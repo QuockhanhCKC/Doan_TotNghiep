@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('nha_sx_id');
             $table->string('ten_sp', 255);
             $table->string('gia', 50);
+            $table->string('kich_co', 100)->nullable();
             $table->string('chat_lieu', 100)->nullable();
             $table->string('mau_sac', 100)->nullable();
    

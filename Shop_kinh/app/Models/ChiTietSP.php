@@ -18,6 +18,7 @@ class ChiTietSP extends Model
         'nha_sx_id',
         'ten_sp',
         'gia',
+        'kich_co',
         'mo_ta',
         'mau_sac',
         'so_luong',

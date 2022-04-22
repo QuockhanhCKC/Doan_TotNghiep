@@ -13,7 +13,8 @@ class SanPham extends Model
     protected $appends = ['anh_sp'];
     protected $fillable = [
         'ma_sp',
-        'hinh_anh'
+        'hinh_anh',
+        'gioi_tinh'
     ];
 
     public function getAnhSpAttribute() {

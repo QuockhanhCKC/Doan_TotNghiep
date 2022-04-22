@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('ma_sp');
             $table->string('hinh_anh')->nullable();
+            $table->string('gioi_tinh')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
