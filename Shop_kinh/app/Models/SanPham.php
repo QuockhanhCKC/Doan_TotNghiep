@@ -4,17 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class SanPham extends Model
 {
-    use SoftDeletes, Sortable;
+    use SoftDeletes;
 
     protected $table = 'san_pham';
     protected $appends = ['anh_sp'];
     protected $fillable = [
         'ma_sp',
         'hinh_anh',
-        'gioi_tinh'
+    
     ];
 
     public function getAnhSpAttribute() {

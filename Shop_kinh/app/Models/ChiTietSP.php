@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ChiTietSP extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'chi_tiet_sp';
+    protected $table = '_chi_tiet_s_p';
     protected $casts = ['hinh_anh'  => 'json'];
     protected $appends = ['anh_chi_tiet_sp'];
     protected $fillable = [
@@ -20,6 +21,7 @@ class ChiTietSP extends Model
         'gia',
         'kich_co',
         'mo_ta',
+        'gioi_tinh',
         'mau_sac',
         'so_luong',
         'giam_gia',

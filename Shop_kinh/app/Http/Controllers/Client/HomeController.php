@@ -10,7 +10,11 @@ class HomeController extends Controller
 {
     public function index(){
         
-    	return view('Font-end.page.home.home');
+        $sanpham = ChiTietSP::where('tinh_trang',1)->get();
+        $sanphammoi = ChiTietSP::where('new',1)->where('tinh_trang','1')->get();
+        $sanphamsale = ChiTietSP::where('giam_gia','<>',0)->where('tinh_trang',1)->get();
+
+    	return view('Font-end.page.home.home',compact('sanpham','sanphamsale','sanphammoi'));
     }
     
     public function about(){

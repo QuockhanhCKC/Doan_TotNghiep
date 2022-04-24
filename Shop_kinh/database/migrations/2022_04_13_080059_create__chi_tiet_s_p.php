@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('kich_co', 100)->nullable();
             $table->string('chat_lieu', 100)->nullable();
             $table->string('mau_sac', 100)->nullable();
-   
+            $table->string('gioi_tinh')->nullable();
             $table->integer('so_luong')->default(0);
             $table->string('giam_gia',10)->default(0);
             $table->longText('hinh_anh')->nullable();
