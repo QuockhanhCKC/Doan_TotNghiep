@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
+use Kyslik\ColumnSortable\Sortable;
 class ChiTietSP extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes,Sortable;
 
-    protected $table = '_chi_tiet_s_p';
+    protected $table = 'chi_tiet_sp';
     protected $casts = ['hinh_anh'  => 'json'];
     protected $appends = ['anh_chi_tiet_sp'];
     protected $fillable = [

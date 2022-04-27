@@ -5,20 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
+use Kyslik\ColumnSortable\Sortable;
 class SanPham extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes,Sortable;
 
     protected $table = 'san_pham';
     protected $appends = ['anh_sp'];
+    protected $primaryKey='id';
     protected $fillable = [
         'ma_sp',
         'hinh_anh',
     
     ];
 
-    public function getAnhSpAttribute() {
+     public function getAnhSpAttribute() {
         if (empty($this->hinh_anh)) {
             return null;
         }
@@ -59,5 +60,5 @@ class SanPham extends Model
             $q->with(['loai_sp', 'nha_san_xuat']);
         }])->orderBy('ma_sp');
     }
-
+ 
 }

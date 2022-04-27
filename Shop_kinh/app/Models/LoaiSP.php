@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class LoaiSP extends Model
 {
-    use SoftDeletes, Sortable;
+    use SoftDeletes;
 
-    protected $table = 'loai_sp';
+    protected $table = 'loai_s_p';
     protected $fillable = ['ten'];
 
     public function chitietsanpham() {

@@ -8,12 +8,11 @@ use Kyslik\ColumnSortable\Sortable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 class NhaSanXuat extends Model
 {
-    use SoftDeletes, Sortable;
+    use SoftDeletes,Sortable;
 
     protected $table = 'nha_san_xuat';
+    protected $primaryKey='id';
     protected $fillable = ['ten'];
 
-    public function chitietsanpham() {
-        return $this->belongsTo('App\ChiTietSanPham','nha_sx_id','id');
-    }
+    
 }

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('_nha_san_xuat', function (Blueprint $table) {
+        Schema::create('nha_san_xuat', function (Blueprint $table) {
             $table->id();
             $table->string('ten');
             $table->timestamps();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_nha_san_xuat');
+        Schema::dropIfExists('nha_san_xuat');
     }
 };

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('_hoa_don', function (Blueprint $table) {
+        Schema::create('hoa_don', function (Blueprint $table) {
             $table->id();
             $table->string('ma_hd', 255);
             $table->foreignId('khach_hang_id');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_hoa_don');
+        Schema::dropIfExists('hoa_don');
     }
 };

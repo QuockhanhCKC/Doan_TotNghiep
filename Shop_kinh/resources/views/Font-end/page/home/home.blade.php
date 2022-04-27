@@ -4,8 +4,10 @@
 @include('Font-end.layout.slide')
 	<div class="section group">
 		  <div class="cont span_2_of_3">
-		  	<h2 class="head">Featured Products</h2>
+		  	<h2 class="head">Sản Phẩm Mới</h2>
+			
 			<div class="top-box">
+				@foreach($sanpham as $spm)
 			 <div class="col_1_of_3 span_1_of_3"> 
 			   <a href="{{route('Detail')}}">
 				<div class="inner_content clearfix">
@@ -15,7 +17,7 @@
                     <div class="sale-box"><span class="on_sale title_shop">New</span></div>	
                     <div class="price">
 					   <div class="cart-left">
-							<p class="title">Lorem Ipsum simply</p>
+							<p class="title">ten</p>
 							<div class="price1">
 							  <span class="actual">$12.00</span>
 							</div>
@@ -26,6 +28,7 @@
                    </div>
                  </a>
 				</div>
+				@endforeach
 			   <div class="col_1_of_3 span_1_of_3">
 			   	 <a href="{{route('Detail')}}">
 					<div class="inner_content clearfix">
@@ -66,9 +69,11 @@
                    </div>
                    </a>
 				</div>
+		
 				<div class="clear"></div>
 			</div>	
-			<div class="top-box">
+	
+			 <div class="top-box">
 			  <div class="col_1_of_3 span_1_of_3">
 			  	 <a href="{{route('Detail')}}">
 				 <div class="inner_content clearfix">
@@ -128,7 +133,7 @@
                  </a>
 				</div>
 				<div class="clear"></div>
-			</div>	
+			</div> 
 			<div class="top-box1">
 			  <div class="col_1_of_3 span_1_of_3">
 			  	 <a href="{{route('Detail')}}">
@@ -192,7 +197,7 @@
                    </a>
 				</div>
 				<div class="clear"></div>
-			</div>	
+			</div>	 
 		  <h2 class="head">Staff Pick</h2>
 		  <div class="top-box1">
 			  <div class="col_1_of_3 span_1_of_3">

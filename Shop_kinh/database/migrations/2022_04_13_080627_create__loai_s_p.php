@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('_loai_s_p', function (Blueprint $table) {
+        Schema::create('loai_sp', function (Blueprint $table) {
             $table->id();
             $table->string('ten');
             $table->timestamps();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_loai_s_p');
+        Schema::dropIfExists('loai_sp');
     }
 };
